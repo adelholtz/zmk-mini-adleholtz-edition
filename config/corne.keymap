@@ -15,12 +15,12 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <120>; /* tune to taste */
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
 
         para: para {
