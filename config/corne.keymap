@@ -15,15 +15,19 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
             flavor = "tap-preferred";
+            tapping-term-ms = <280>;        // up from 175
+            quick-tap-ms = <175>;           // up slightly
+            require-prior-idle-ms = <175>;  // up from 100 — this kills the ctrl+a problem
             bindings = <&kp>, <&kp>;
-
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
         };
-
-        para: para {
+&lt {
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <175>;
+    flavor = "tap-preferred";
+};
+        para: para {f
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
