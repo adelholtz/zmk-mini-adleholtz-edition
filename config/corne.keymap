@@ -21,12 +21,7 @@
             require-prior-idle-ms = <175>;  // up from 100 — this kills the ctrl+a problem
             bindings = <&kp>, <&kp>;
         };
-&lt {
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <175>;
-    flavor = "tap-preferred";
-};
+
         para: para {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -320,4 +315,11 @@
             >;
         };
     };
+};
+
+&lt {
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <175>;
+    flavor = "tap-preferred";
 };
