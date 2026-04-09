@@ -27,7 +27,7 @@
     require-prior-idle-ms = <175>;
     flavor = "tap-preferred";
 };
-        para: para {f
+        para: para {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
